@@ -12,6 +12,8 @@
 		C08C3E8D1EE6FAA400FEAC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C3E8B1EE6FAA400FEAC5A /* Main.storyboard */; };
 		C08C3E8F1EE6FAA400FEAC5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08C3E8E1EE6FAA400FEAC5A /* Assets.xcassets */; };
 		C08C3E921EE6FAA400FEAC5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C3E901EE6FAA400FEAC5A /* LaunchScreen.storyboard */; };
+		C08C3E9A1EE6FAB200FEAC5A /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C3E991EE6FAB200FEAC5A /* JournalEntry.swift */; };
+		C08C3E9F1EE726B600FEAC5A /* JournalEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C3E9D1EE726B600FEAC5A /* JournalEntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C08C3E8E1EE6FAA400FEAC5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08C3E911EE6FAA400FEAC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C08C3E931EE6FAA400FEAC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08C3E991EE6FAB200FEAC5A /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		C08C3E9D1EE726B600FEAC5A /* JournalEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				C08C3E871EE6FAA400FEAC5A /* AppDelegate.swift */,
 				C08C3E891EE6FAA400FEAC5A /* ViewController.swift */,
+				C08C3E991EE6FAB200FEAC5A /* JournalEntry.swift */,
+				C08C3EA11EE7305000FEAC5A /* Cell */,
 				C08C3E8B1EE6FAA400FEAC5A /* Main.storyboard */,
 				C08C3E8E1EE6FAA400FEAC5A /* Assets.xcassets */,
 				C08C3E901EE6FAA400FEAC5A /* LaunchScreen.storyboard */,
 				C08C3E931EE6FAA400FEAC5A /* Info.plist */,
 			);
 			path = Codable;
+			sourceTree = "<group>";
+		};
+		C08C3EA11EE7305000FEAC5A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C08C3E9D1EE726B600FEAC5A /* JournalEntryTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08C3E9F1EE726B600FEAC5A /* JournalEntryTableViewCell.swift in Sources */,
+				C08C3E9A1EE6FAB200FEAC5A /* JournalEntry.swift in Sources */,
 				C08C3E8A1EE6FAA400FEAC5A /* ViewController.swift in Sources */,
 				C08C3E881EE6FAA400FEAC5A /* AppDelegate.swift in Sources */,
 			);
@@ -269,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5D5F95BU65;
 				INFOPLIST_FILE = Codable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.montabellamedia.Codable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,7 +300,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5D5F95BU65;
 				INFOPLIST_FILE = Codable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.montabellamedia.Codable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +330,7 @@
 				C08C3E981EE6FAA400FEAC5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
